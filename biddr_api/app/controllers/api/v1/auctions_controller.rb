@@ -2,6 +2,7 @@ class Api::V1::AuctionsController < Api::ApplicationController
     before_action :authenticate_user!, except: [ :index, :show ]
     def create
         auction = Auction.new auction_params
+        auction.user = current_user
 
         auction.save!
         render json: auction
@@ -28,6 +29,7 @@ class Api::V1::AuctionsController < Api::ApplicationController
     end
 
     def auction_params
-        params.require(:auction).permit(:title, :description, :end_date, :price)
+        params.permit(:title, :details, :end_date, :price)
     end
+
 end
