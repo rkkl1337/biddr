@@ -1,0 +1,66 @@
+  [1m[35m (470.3ms)[0m  [1m[35mCREATE DATABASE "biddr_api_development" ENCODING = 'unicode'[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (298.7ms)[0m  [1m[35mCREATE DATABASE "biddr_api_test" ENCODING = 'unicode'[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+Migrating to CreateUsers (20181126172957)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mActiveRecord::SchemaMigration Create (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181126172957"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+Migrating to CreateAuctions (20181126173009)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "auctions" ("id" bigserial primary key, "title" character varying, "details" text, "end_date" date, "price" integer, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_a21a834151"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_auctions_on_user_id" ON "auctions"  ("user_id")[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181126173009"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+Migrating to CreateBids (20181126173013)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "bids" ("id" bigserial primary key, "bid_price" integer, "user_id" bigint, "auction_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_e173de2ed3"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_7332d1a025"
+FOREIGN KEY ("auction_id")
+  REFERENCES "auctions" ("id")
+)[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_bids_on_user_id" ON "bids"  ("user_id")[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_bids_on_auction_id" ON "bids"  ("auction_id")[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181126173013"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-26 17:46:46.329178"], ["updated_at", "2018-11-26 17:46:46.329178"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
