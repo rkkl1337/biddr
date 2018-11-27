@@ -11714,3 +11714,130 @@ Filter chain halted as :authenticate_user! rendered or redirected
 Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:34:39 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/sessions" for 127.0.0.1 at 2018-11-26 17:34:51 -0800
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"email"=>"lbj@user.com", "password"=>"[FILTERED]", "session"=>{"email"=>"lbj@user.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lbj@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 72ms (Views: 1.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:34:52 -0800
+Processing by Api::V1::UsersController#current as JSON
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.26ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 17:34:56 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Load (0.9ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (3.43ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/api/v1/sessions" for 127.0.0.1 at 2018-11-26 17:35:07 -0800
+Processing by Api::V1::SessionsController#destroy as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/sessions" for 127.0.0.1 at 2018-11-26 17:35:25 -0800
+Processing by Api::V1::SessionsController#create as JSON
+  Parameters: {"email"=>"lbj@user.com", "password"=>"[FILTERED]", "session"=>{"email"=>"lbj@user.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lbj@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 56ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:35:25 -0800
+Processing by Api::V1::UsersController#current as JSON
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.34ms)
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 17:35:27 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (5.44ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/auctions/222" for 127.0.0.1 at 2018-11-26 17:35:28 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"222"}
+  [1m[36mAuction Load (0.2ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 222], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Auction (0.47ms)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:36:25 -0800
+Processing by Api::V1::UsersController#current as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.35ms)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 17:45:08 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Load (0.8ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (2.17ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/auctions/222" for 127.0.0.1 at 2018-11-26 17:45:09 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"222"}
+  [1m[36mAuction Load (0.2ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 222], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Auction (0.43ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+
+
