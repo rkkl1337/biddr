@@ -11700,3 +11700,17 @@ Filter chain halted as :authenticate_user! rendered or redirected
 Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:33:17 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:33:24 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
