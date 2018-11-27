@@ -10661,3 +10661,1042 @@ Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 9.8ms)
   ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
   ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:14:04 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (2.0ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+Completed 200 OK in 45ms (Views: 26.1ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:22:09 -0800
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.9ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 205, title: "cyan Nidoqueen", details: "In laborum nobis. Voluptatum unde repudiandae. Ab ...", end_date: "2019-11-03", price: 96, user_id: 125, created_at: "2018-11-26 21:44:16", updated_at: "2018-11-26 21:44:16">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (6.62ms)
+Completed 200 OK in 64ms (Views: 49.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:22:49 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (31.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 205, title: "cyan Nidoqueen", details: "In laborum nobis. Voluptatum unde repudiandae. Ab ...", end_date: "2019-11-03", price: 96, user_id: 125, created_at: "2018-11-26 21:44:16", updated_at: "2018-11-26 21:44:16">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (20.99ms)
+Completed 200 OK in 58ms (Views: 26.2ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:23:45 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 205, title: "cyan Nidoqueen", details: "In laborum nobis. Voluptatum unde repudiandae. Ab ...", end_date: "2019-11-03", price: 96, user_id: 125, created_at: "2018-11-26 21:44:16", updated_at: "2018-11-26 21:44:16">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (2.88ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Destroy (4.5ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Destroy (3.6ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Destroy (2.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lbj@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Lebron_James"], ["email", "lbj@user.com"], ["password_digest", "$2a$10$/FaSndLXte4EgsSHiieQDOoGds9V4MFgEcad7mq8.ly5SzVyG.sZW"], ["created_at", "2018-11-27 00:25:23.252523"], ["updated_at", "2018-11-27 00:25:23.252523"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "denethor@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Denethor"], ["email", "denethor@user.com"], ["password_digest", "$2a$10$8n/pyq9pyI/aY/ioQs9DY.4JqVnnYC.1KmOZtQMB4rtebaNjqGwoC"], ["created_at", "2018-11-27 00:25:23.509373"], ["updated_at", "2018-11-27 00:25:23.509373"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "glorfindel@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Glorfindel"], ["email", "glorfindel@user.com"], ["password_digest", "$2a$10$B8ueNtsYtohYAMvoAWJHzuwdvMUeqwcgglRHQSE8MX7kyfTrtptWa"], ["created_at", "2018-11-27 00:25:23.566824"], ["updated_at", "2018-11-27 00:25:23.566824"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "galadriel@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Galadriel"], ["email", "galadriel@user.com"], ["password_digest", "$2a$10$AScH0x/FCTs/3sU.hkOE6uPZStrTT8nAZb/XhoccGbfxcHUjBMZdC"], ["created_at", "2018-11-27 00:25:23.623199"], ["updated_at", "2018-11-27 00:25:23.623199"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "théoden@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "peregrin took@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "faramir@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Faramir"], ["email", "faramir@user.com"], ["password_digest", "$2a$10$k2ANa4twb51IC.tT9rqmAuDLYTJ5Jf5Bixzyp7j269eX8zvNsDgou"], ["created_at", "2018-11-27 00:25:23.793250"], ["updated_at", "2018-11-27 00:25:23.793250"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "samwise gamgee@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "éomer@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sauron@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Sauron"], ["email", "sauron@user.com"], ["password_digest", "$2a$10$wb5D95XCsFz.Cvz6zZVQXucPAI4rmJO8vIU5evqMa2aB.rYe1RJaW"], ["created_at", "2018-11-27 00:25:23.963631"], ["updated_at", "2018-11-27 00:25:23.963631"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aragorn@user.com"], ["LIMIT", 1]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Aragorn"], ["email", "aragorn@user.com"], ["password_digest", "$2a$10$aK4QNHNVX5RYL6DNMen.EO6G8z6fSzgPQBef8X/KcLaskXCerpQeu"], ["created_at", "2018-11-27 00:25:24.025912"], ["updated_at", "2018-11-27 00:25:24.025912"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.5ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "green Victreebel"], ["details", "Distinctio aut laborum. Harum explicabo velit. Possimus et aut. Veritatis ipsa nisi. Voluptas possimus voluptate. Ea rem repellat. Est iste velit. Nulla et veniam. Dicta et deleniti. Saepe quis nihil. Quibusdam quos quam. Velit rem qui. Qui voluptates lib."], ["end_date", "2019-09-10"], ["price", 75], ["user_id", 127], ["created_at", "2018-11-27 00:25:24.063468"], ["updated_at", "2018-11-27 00:25:24.063468"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.7ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 417], ["user_id", 132], ["auction_id", 206], ["created_at", "2018-11-27 00:25:24.083323"], ["updated_at", "2018-11-27 00:25:24.083323"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 310], ["user_id", 128], ["auction_id", 206], ["created_at", "2018-11-27 00:25:24.088688"], ["updated_at", "2018-11-27 00:25:24.088688"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 232], ["user_id", 130], ["auction_id", 206], ["created_at", "2018-11-27 00:25:24.091087"], ["updated_at", "2018-11-27 00:25:24.091087"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 123], ["user_id", 127], ["auction_id", 206], ["created_at", "2018-11-27 00:25:24.093374"], ["updated_at", "2018-11-27 00:25:24.093374"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 399], ["user_id", 132], ["auction_id", 206], ["created_at", "2018-11-27 00:25:24.095312"], ["updated_at", "2018-11-27 00:25:24.095312"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 173], ["user_id", 130], ["auction_id", 206], ["created_at", "2018-11-27 00:25:24.097153"], ["updated_at", "2018-11-27 00:25:24.097153"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "azure Aerodactyl"], ["details", "Aut veniam eius. Asperiores facere nam. A cupiditate et. Quaerat voluptatem consequatur. Autem deleniti natus. Distinctio neque aut. Voluptas quod eaque. Similique et assumenda. Accusantium nobis velit. Architecto autem quo. Laboriosam alias dolor. Atque ."], ["end_date", "2019-08-11"], ["price", 79], ["user_id", 130], ["created_at", "2018-11-27 00:25:24.100097"], ["updated_at", "2018-11-27 00:25:24.100097"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 255], ["user_id", 130], ["auction_id", 207], ["created_at", "2018-11-27 00:25:24.102624"], ["updated_at", "2018-11-27 00:25:24.102624"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 409], ["user_id", 130], ["auction_id", 207], ["created_at", "2018-11-27 00:25:24.104813"], ["updated_at", "2018-11-27 00:25:24.104813"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "red Machop"], ["details", "Qui repellendus culpa. Explicabo velit debitis. Alias magni ipsa. Atque iure dolorem. Nemo dolore perspiciatis. Eius vel dolores. Ut nemo quod. Cum consequuntur nobis. Minus suscipit soluta. Quisquam omnis tempore. Qui tempore accusantium. Quidem expedita."], ["end_date", "2019-04-02"], ["price", 56], ["user_id", 132], ["created_at", "2018-11-27 00:25:24.127393"], ["updated_at", "2018-11-27 00:25:24.127393"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 435], ["user_id", 130], ["auction_id", 208], ["created_at", "2018-11-27 00:25:24.130370"], ["updated_at", "2018-11-27 00:25:24.130370"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 492], ["user_id", 132], ["auction_id", 208], ["created_at", "2018-11-27 00:25:24.132645"], ["updated_at", "2018-11-27 00:25:24.132645"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 121], ["user_id", 127], ["auction_id", 208], ["created_at", "2018-11-27 00:25:24.134750"], ["updated_at", "2018-11-27 00:25:24.134750"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 459], ["user_id", 131], ["auction_id", 208], ["created_at", "2018-11-27 00:25:24.136820"], ["updated_at", "2018-11-27 00:25:24.136820"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 174], ["user_id", 127], ["auction_id", 208], ["created_at", "2018-11-27 00:25:24.138896"], ["updated_at", "2018-11-27 00:25:24.138896"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "yellow Aerodactyl"], ["details", "Assumenda quas quibusdam. Neque sit corrupti. Rerum praesentium neque. Voluptatem animi iusto. Praesentium in quasi. Laborum optio temporibus. Qui repellat ad. Iste non ut. Itaque voluptates laboriosam. Repellat libero ab. Consequatur omnis asperiores. Mi."], ["end_date", "2019-11-01"], ["price", 61], ["user_id", 131], ["created_at", "2018-11-27 00:25:24.142021"], ["updated_at", "2018-11-27 00:25:24.142021"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 220], ["user_id", 131], ["auction_id", 209], ["created_at", "2018-11-27 00:25:24.144486"], ["updated_at", "2018-11-27 00:25:24.144486"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 314], ["user_id", 127], ["auction_id", 209], ["created_at", "2018-11-27 00:25:24.146364"], ["updated_at", "2018-11-27 00:25:24.146364"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 479], ["user_id", 132], ["auction_id", 209], ["created_at", "2018-11-27 00:25:24.148088"], ["updated_at", "2018-11-27 00:25:24.148088"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "plum Diglett"], ["details", "Nostrum adipisci aperiam. Aut quod totam. Fugiat et ea. Deserunt voluptatibus dolor. Facilis ipsa corrupti. Et sunt nulla. Quis neque aut. Nisi consequatur nam. Et fugiat iusto. Occaecati voluptatibus quo. Id laudantium nisi. In ad harum. Ipsam veniam et.."], ["end_date", "2019-02-07"], ["price", 4], ["user_id", 126], ["created_at", "2018-11-27 00:25:24.156362"], ["updated_at", "2018-11-27 00:25:24.156362"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 338], ["user_id", 127], ["auction_id", 210], ["created_at", "2018-11-27 00:25:24.158855"], ["updated_at", "2018-11-27 00:25:24.158855"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 307], ["user_id", 129], ["auction_id", 210], ["created_at", "2018-11-27 00:25:24.161039"], ["updated_at", "2018-11-27 00:25:24.161039"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 123], ["user_id", 132], ["auction_id", 210], ["created_at", "2018-11-27 00:25:24.163267"], ["updated_at", "2018-11-27 00:25:24.163267"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 365], ["user_id", 130], ["auction_id", 210], ["created_at", "2018-11-27 00:25:24.165469"], ["updated_at", "2018-11-27 00:25:24.165469"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 145], ["user_id", 127], ["auction_id", 210], ["created_at", "2018-11-27 00:25:24.167692"], ["updated_at", "2018-11-27 00:25:24.167692"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 263], ["user_id", 131], ["auction_id", 210], ["created_at", "2018-11-27 00:25:24.169437"], ["updated_at", "2018-11-27 00:25:24.169437"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "magenta Mr. Mime"], ["details", "Quas dolorum omnis. Sequi quia nesciunt. Consequatur ut tenetur. Excepturi recusandae nostrum. Eligendi non molestiae. Laborum laudantium libero. Necessitatibus aperiam eum. Est laboriosam maxime. Qui quis alias. Odit nostrum minus. Ut quo est. Eos quisqu."], ["end_date", "2019-03-07"], ["price", 19], ["user_id", 129], ["created_at", "2018-11-27 00:25:24.171776"], ["updated_at", "2018-11-27 00:25:24.171776"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 497], ["user_id", 132], ["auction_id", 211], ["created_at", "2018-11-27 00:25:24.174259"], ["updated_at", "2018-11-27 00:25:24.174259"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 444], ["user_id", 129], ["auction_id", 211], ["created_at", "2018-11-27 00:25:24.176483"], ["updated_at", "2018-11-27 00:25:24.176483"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 308], ["user_id", 126], ["auction_id", 211], ["created_at", "2018-11-27 00:25:24.178683"], ["updated_at", "2018-11-27 00:25:24.178683"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 241], ["user_id", 127], ["auction_id", 211], ["created_at", "2018-11-27 00:25:24.180689"], ["updated_at", "2018-11-27 00:25:24.180689"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 320], ["user_id", 130], ["auction_id", 211], ["created_at", "2018-11-27 00:25:24.182882"], ["updated_at", "2018-11-27 00:25:24.182882"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "pink Moltres"], ["details", "Aliquid rerum quaerat. Distinctio ea adipisci. Nemo debitis aut. Ut culpa numquam. Adipisci aut iusto. Consequatur nemo aut. Fugit voluptate eveniet. Aspernatur id alias. Et molestiae harum. Tempore velit perferendis. Voluptatem nam dignissimos. Et occaec."], ["end_date", "2019-05-01"], ["price", 86], ["user_id", 126], ["created_at", "2018-11-27 00:25:24.187536"], ["updated_at", "2018-11-27 00:25:24.187536"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 339], ["user_id", 131], ["auction_id", 212], ["created_at", "2018-11-27 00:25:24.189773"], ["updated_at", "2018-11-27 00:25:24.189773"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 445], ["user_id", 126], ["auction_id", 212], ["created_at", "2018-11-27 00:25:24.191746"], ["updated_at", "2018-11-27 00:25:24.191746"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 422], ["user_id", 129], ["auction_id", 212], ["created_at", "2018-11-27 00:25:24.193885"], ["updated_at", "2018-11-27 00:25:24.193885"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 481], ["user_id", 127], ["auction_id", 212], ["created_at", "2018-11-27 00:25:24.196118"], ["updated_at", "2018-11-27 00:25:24.196118"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 299], ["user_id", 131], ["auction_id", 212], ["created_at", "2018-11-27 00:25:24.198353"], ["updated_at", "2018-11-27 00:25:24.198353"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "gold Beedrill"], ["details", "Impedit incidunt voluptatem. Ab enim nihil. Cupiditate id et. Officia ut molestias. Et ad nesciunt. Et vel veniam. Beatae sint quod. Et eligendi voluptates. Est excepturi dolorem. Animi maxime dolore. Facilis iure veniam. Aut rerum iure. Excepturi eius qu."], ["end_date", "2019-07-08"], ["price", 34], ["user_id", 131], ["created_at", "2018-11-27 00:25:24.210889"], ["updated_at", "2018-11-27 00:25:24.210889"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 298], ["user_id", 129], ["auction_id", 213], ["created_at", "2018-11-27 00:25:24.213149"], ["updated_at", "2018-11-27 00:25:24.213149"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 488], ["user_id", 127], ["auction_id", 213], ["created_at", "2018-11-27 00:25:24.215458"], ["updated_at", "2018-11-27 00:25:24.215458"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 376], ["user_id", 128], ["auction_id", 213], ["created_at", "2018-11-27 00:25:24.217723"], ["updated_at", "2018-11-27 00:25:24.217723"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "olive Poliwrath"], ["details", "Maxime voluptas in. Ex molestiae labore. Architecto ipsa ipsam. Error perferendis doloremque. Quia rerum quia. Et magni sed. Nisi laudantium veniam. Ex veniam et. Sint eum minus. Est consequatur quis. Sunt et sit. Porro fugit eum. Amet sapiente tempora. S."], ["end_date", "2019-07-11"], ["price", 40], ["user_id", 128], ["created_at", "2018-11-27 00:25:24.220632"], ["updated_at", "2018-11-27 00:25:24.220632"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 216], ["user_id", 132], ["auction_id", 214], ["created_at", "2018-11-27 00:25:24.222859"], ["updated_at", "2018-11-27 00:25:24.222859"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 172], ["user_id", 132], ["auction_id", 214], ["created_at", "2018-11-27 00:25:24.224699"], ["updated_at", "2018-11-27 00:25:24.224699"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 251], ["user_id", 127], ["auction_id", 214], ["created_at", "2018-11-27 00:25:24.226674"], ["updated_at", "2018-11-27 00:25:24.226674"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 471], ["user_id", 128], ["auction_id", 214], ["created_at", "2018-11-27 00:25:24.228552"], ["updated_at", "2018-11-27 00:25:24.228552"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 369], ["user_id", 132], ["auction_id", 214], ["created_at", "2018-11-27 00:25:24.230505"], ["updated_at", "2018-11-27 00:25:24.230505"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 149], ["user_id", 132], ["auction_id", 214], ["created_at", "2018-11-27 00:25:24.232492"], ["updated_at", "2018-11-27 00:25:24.232492"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "pink Venusaur"], ["details", "Quia voluptatem excepturi. Sunt saepe non. Sunt doloribus excepturi. Consequatur molestias aliquam. Sint ut aut. Enim dolor sapiente. Consequatur ut quos. Aliquam repudiandae architecto. Veritatis quia reiciendis. Dicta expedita blanditiis. Ipsa optio ull."], ["end_date", "2019-03-06"], ["price", 38], ["user_id", 132], ["created_at", "2018-11-27 00:25:24.236829"], ["updated_at", "2018-11-27 00:25:24.236829"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 292], ["user_id", 126], ["auction_id", 215], ["created_at", "2018-11-27 00:25:24.239084"], ["updated_at", "2018-11-27 00:25:24.239084"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 273], ["user_id", 129], ["auction_id", 215], ["created_at", "2018-11-27 00:25:24.241210"], ["updated_at", "2018-11-27 00:25:24.241210"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 489], ["user_id", 131], ["auction_id", 215], ["created_at", "2018-11-27 00:25:24.243359"], ["updated_at", "2018-11-27 00:25:24.243359"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 399], ["user_id", 130], ["auction_id", 215], ["created_at", "2018-11-27 00:25:24.245217"], ["updated_at", "2018-11-27 00:25:24.245217"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 375], ["user_id", 126], ["auction_id", 215], ["created_at", "2018-11-27 00:25:24.246951"], ["updated_at", "2018-11-27 00:25:24.246951"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 202], ["user_id", 129], ["auction_id", 215], ["created_at", "2018-11-27 00:25:24.248822"], ["updated_at", "2018-11-27 00:25:24.248822"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "ivory Poliwag"], ["details", "Unde officiis dolorum. Dolorum velit aliquid. Aut ut harum. Rerum cupiditate voluptates. Sunt soluta quis. Ipsam voluptate eos. Maiores vitae eaque. Ut repellendus incidunt. Nobis optio et. Accusamus voluptatibus aspernatur. Quo ut suscipit. Mollitia rem ."], ["end_date", "2019-04-07"], ["price", 64], ["user_id", 132], ["created_at", "2018-11-27 00:25:24.251428"], ["updated_at", "2018-11-27 00:25:24.251428"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 248], ["user_id", 128], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.253759"], ["updated_at", "2018-11-27 00:25:24.253759"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 110], ["user_id", 132], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.255611"], ["updated_at", "2018-11-27 00:25:24.255611"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 163], ["user_id", 128], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.257672"], ["updated_at", "2018-11-27 00:25:24.257672"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 434], ["user_id", 128], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.259546"], ["updated_at", "2018-11-27 00:25:24.259546"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 342], ["user_id", 132], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.261795"], ["updated_at", "2018-11-27 00:25:24.261795"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 209], ["user_id", 132], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.264024"], ["updated_at", "2018-11-27 00:25:24.264024"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 321], ["user_id", 128], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.266244"], ["updated_at", "2018-11-27 00:25:24.266244"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 400], ["user_id", 128], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.268311"], ["updated_at", "2018-11-27 00:25:24.268311"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 118], ["user_id", 126], ["auction_id", 216], ["created_at", "2018-11-27 00:25:24.270143"], ["updated_at", "2018-11-27 00:25:24.270143"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "fuchsia Ditto"], ["details", "Nulla qui fugit. Corporis consequatur eos. Veritatis cupiditate natus. Modi qui illum. Accusamus autem maiores. Alias excepturi earum. Similique sint consequuntur. Deserunt eveniet maxime. Sunt sit et. Sequi veritatis ipsum. Sed officiis commodi. Tempora ."], ["end_date", "2019-04-12"], ["price", 26], ["user_id", 127], ["created_at", "2018-11-27 00:25:24.272493"], ["updated_at", "2018-11-27 00:25:24.272493"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 201], ["user_id", 126], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.274649"], ["updated_at", "2018-11-27 00:25:24.274649"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 168], ["user_id", 129], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.276565"], ["updated_at", "2018-11-27 00:25:24.276565"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 289], ["user_id", 130], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.278659"], ["updated_at", "2018-11-27 00:25:24.278659"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 468], ["user_id", 132], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.280769"], ["updated_at", "2018-11-27 00:25:24.280769"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 150], ["user_id", 131], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.282515"], ["updated_at", "2018-11-27 00:25:24.282515"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 271], ["user_id", 129], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.284391"], ["updated_at", "2018-11-27 00:25:24.284391"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 149], ["user_id", 131], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.286286"], ["updated_at", "2018-11-27 00:25:24.286286"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 138], ["user_id", 127], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.288087"], ["updated_at", "2018-11-27 00:25:24.288087"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 155], ["user_id", 131], ["auction_id", 217], ["created_at", "2018-11-27 00:25:24.289976"], ["updated_at", "2018-11-27 00:25:24.289976"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "mint green Dugtrio"], ["details", "Repudiandae aut optio. Ut libero et. Omnis aut porro. Illo rem rerum. Nisi aliquam harum. Totam fugiat libero. Nobis quibusdam sit. Neque eum aliquid. Soluta iure quia. Ipsum id dolores. Porro voluptas accusantium. Maxime dolor non. At doloribus et. Ad vo."], ["end_date", "2019-01-05"], ["price", 52], ["user_id", 131], ["created_at", "2018-11-27 00:25:24.296242"], ["updated_at", "2018-11-27 00:25:24.296242"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 322], ["user_id", 128], ["auction_id", 218], ["created_at", "2018-11-27 00:25:24.298685"], ["updated_at", "2018-11-27 00:25:24.298685"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 134], ["user_id", 126], ["auction_id", 218], ["created_at", "2018-11-27 00:25:24.300580"], ["updated_at", "2018-11-27 00:25:24.300580"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 409], ["user_id", 127], ["auction_id", 218], ["created_at", "2018-11-27 00:25:24.302453"], ["updated_at", "2018-11-27 00:25:24.302453"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 218], ["user_id", 131], ["auction_id", 218], ["created_at", "2018-11-27 00:25:24.304262"], ["updated_at", "2018-11-27 00:25:24.304262"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 108], ["user_id", 129], ["auction_id", 218], ["created_at", "2018-11-27 00:25:24.306055"], ["updated_at", "2018-11-27 00:25:24.306055"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 255], ["user_id", 126], ["auction_id", 218], ["created_at", "2018-11-27 00:25:24.308523"], ["updated_at", "2018-11-27 00:25:24.308523"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 125], ["user_id", 127], ["auction_id", 218], ["created_at", "2018-11-27 00:25:24.310696"], ["updated_at", "2018-11-27 00:25:24.310696"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "mint green Arcanine"], ["details", "Facilis nam praesentium. Ut rem ab. Ut pariatur et. Libero qui et. Quaerat dicta perferendis. Porro sint iure. Cum eius non. Quisquam explicabo eum. Ut quibusdam ea. Labore nulla ea. Quisquam omnis nesciunt. Enim deserunt aliquam. Doloremque laudantium au."], ["end_date", "2019-08-04"], ["price", 55], ["user_id", 127], ["created_at", "2018-11-27 00:25:24.317320"], ["updated_at", "2018-11-27 00:25:24.317320"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 427], ["user_id", 128], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.319761"], ["updated_at", "2018-11-27 00:25:24.319761"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 299], ["user_id", 128], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.321948"], ["updated_at", "2018-11-27 00:25:24.321948"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 337], ["user_id", 130], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.324152"], ["updated_at", "2018-11-27 00:25:24.324152"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 331], ["user_id", 130], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.326350"], ["updated_at", "2018-11-27 00:25:24.326350"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 311], ["user_id", 126], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.328739"], ["updated_at", "2018-11-27 00:25:24.328739"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 283], ["user_id", 127], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.330803"], ["updated_at", "2018-11-27 00:25:24.330803"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 356], ["user_id", 132], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.332584"], ["updated_at", "2018-11-27 00:25:24.332584"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 468], ["user_id", 129], ["auction_id", 219], ["created_at", "2018-11-27 00:25:24.334310"], ["updated_at", "2018-11-27 00:25:24.334310"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "black Gloom"], ["details", "Laborum vel vel. Deserunt repellat consequatur. Amet nihil corporis. Quisquam et dolorem. Facilis sapiente adipisci. Voluptatem quo doloribus. Molestias necessitatibus quis. Sed non ad. Qui adipisci aut. Labore ex reprehenderit. Sequi sint quibusdam. Earu."], ["end_date", "2019-07-01"], ["price", 83], ["user_id", 131], ["created_at", "2018-11-27 00:25:24.336531"], ["updated_at", "2018-11-27 00:25:24.336531"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 148], ["user_id", 129], ["auction_id", 220], ["created_at", "2018-11-27 00:25:24.338627"], ["updated_at", "2018-11-27 00:25:24.338627"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 327], ["user_id", 129], ["auction_id", 220], ["created_at", "2018-11-27 00:25:24.340229"], ["updated_at", "2018-11-27 00:25:24.340229"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 488], ["user_id", 128], ["auction_id", 220], ["created_at", "2018-11-27 00:25:24.341913"], ["updated_at", "2018-11-27 00:25:24.341913"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 429], ["user_id", 128], ["auction_id", 220], ["created_at", "2018-11-27 00:25:24.343838"], ["updated_at", "2018-11-27 00:25:24.343838"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "teal Alakazam"], ["details", "Sit voluptas omnis. Aut commodi qui. Alias sit deleniti. Voluptatem veniam asperiores. Aut officia eaque. Sint et voluptates. Cumque blanditiis voluptas. Omnis aspernatur ipsam. Est esse aut. Voluptas ex non. Ipsam vitae natus. Autem voluptatem non. Et co."], ["end_date", "2019-05-07"], ["price", 12], ["user_id", 131], ["created_at", "2018-11-27 00:25:24.356393"], ["updated_at", "2018-11-27 00:25:24.356393"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 449], ["user_id", 132], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.358988"], ["updated_at", "2018-11-27 00:25:24.358988"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 258], ["user_id", 126], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.361017"], ["updated_at", "2018-11-27 00:25:24.361017"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 189], ["user_id", 129], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.362886"], ["updated_at", "2018-11-27 00:25:24.362886"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 357], ["user_id", 129], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.364625"], ["updated_at", "2018-11-27 00:25:24.364625"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 332], ["user_id", 131], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.366503"], ["updated_at", "2018-11-27 00:25:24.366503"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.2ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 394], ["user_id", 130], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.368270"], ["updated_at", "2018-11-27 00:25:24.368270"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 485], ["user_id", 129], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.369958"], ["updated_at", "2018-11-27 00:25:24.369958"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 430], ["user_id", 131], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.371912"], ["updated_at", "2018-11-27 00:25:24.371912"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 441], ["user_id", 128], ["auction_id", 221], ["created_at", "2018-11-27 00:25:24.373736"], ["updated_at", "2018-11-27 00:25:24.373736"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "end_date", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "lime Weepinbell"], ["details", "Cupiditate excepturi hic. Omnis aut illo. Rerum odit qui. Sed et harum. Veniam similique laborum. Aut quae perspiciatis. Ea voluptatum aliquid. Qui eveniet ratione. Perspiciatis voluptas cupiditate. Distinctio eum enim. Nesciunt consequatur alias. Autem q."], ["end_date", "2019-08-02"], ["price", 56], ["user_id", 132], ["created_at", "2018-11-27 00:25:24.384189"], ["updated_at", "2018-11-27 00:25:24.384189"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 415], ["user_id", 132], ["auction_id", 222], ["created_at", "2018-11-27 00:25:24.386512"], ["updated_at", "2018-11-27 00:25:24.386512"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("bid_price", "user_id", "auction_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bid_price", 203], ["user_id", 127], ["auction_id", 222], ["created_at", "2018-11-27 00:25:24.388690"], ["updated_at", "2018-11-27 00:25:24.388690"]]
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "auctions"[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:25:27 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (3.59ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:39:59 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (5.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (3.58ms)
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:47:27 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (76.1ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (4.09ms)
+Completed 200 OK in 84ms (Views: 7.4ms | ActiveRecord: 76.1ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:47:58 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (2.79ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:48:00 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (2.55ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-26 16:48:08 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.6ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ /Users/ron/.rvm/rubies/ruby-2.5.2/lib/ruby/gems/2.5.0/gems/activesupport-5.2.1/lib/active_support/subscriber.rb:101
+No serializer found for resource: #<Auction id: 222, title: "lime Weepinbell", details: "Cupiditate excepturi hic. Omnis aut illo. Rerum od...", end_date: "2019-08-02", price: 56, user_id: 132, created_at: "2018-11-27 00:25:24", updated_at: "2018-11-27 00:25:24">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Auction::ActiveRecord_Relation (4.43ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:10:45 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:11:01 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:20:15 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:30:35 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:30:48 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:30:53 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/current" for 127.0.0.1 at 2018-11-26 17:31:07 -0800
+Processing by Api::V1::UsersController#current as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
