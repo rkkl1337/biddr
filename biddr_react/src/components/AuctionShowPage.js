@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Auction } from '../requests';
 import AuctionDetails from './AuctionDetails';
+import BidList from './BidList';
 
 class AuctionShowPage extends Component {
     constructor(props) {
@@ -27,6 +28,7 @@ class AuctionShowPage extends Component {
         return (
           <div className="AuctionShowPage">
             <AuctionDetails {...auction} />
+            <BidList bids={auction.bids} />
           </div>
         );
     }
