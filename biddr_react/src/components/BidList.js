@@ -3,6 +3,8 @@ import BidDetails from './BidDetails';
 
 function BidList(props) {
   return (
+    <>
+    <h1>Bids</h1>
     <ul className="BidList">
       {props.bids.map(bid => (
         <li key={bid.id}>
@@ -10,6 +12,7 @@ function BidList(props) {
         </li>
       ))}
     </ul>
+    </>
   );
 }
 

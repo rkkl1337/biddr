@@ -44,6 +44,7 @@ export const Session = {
     }
 };
 
+
 export const User = {
     current() {
       return fetch(`${BASE_URL}/users/current`, {
